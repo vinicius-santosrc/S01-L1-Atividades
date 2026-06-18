@@ -1,0 +1,8 @@
+:- consult('banco_rl14.pl').
+
+fluxo_energia(A, D) :-
+    alimenta(A, D).
+
+fluxo_energia(A, D) :-
+    alimenta(A, Z),
+    fluxo_energia(Z, D).
